@@ -6,6 +6,7 @@
 
 html,
 body,
+
 .wrapper {
   height: 100%;
   margin: 0;
@@ -96,7 +97,9 @@ button[disabled] {
 .float-right {
   float: right;
 }
-
+.container{
+  align: center;
+}
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
