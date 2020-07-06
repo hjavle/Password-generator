@@ -25,17 +25,26 @@
       if(passwordUpper == true) {
         choiceCounter++;
       } 
-      let passwordSymbl = confirm("Do you want Symbols e.g. @#$% to be included in your password");
+      let passwordSymbol = confirm("Do you want Symbols e.g. @#$% to be included in your password");
 
-      if(passwordSymbl == true) {
+      if(passwordSymbol == true) {
         choiceCounter++;
       } 
     if(choiceCounter > 0 )
-        alert(`Please check below criteria for your password: You entered (password length):${passwordLength}Includes Numbers:${passwordNum}Includes Uppercase Alphabets:${passwordUpper}Includes Lowercase Alphabets:${passwordLower}Includes Symbols:${passwordSymbl}`);
+        alert(`Please check below criteria for your password: You entered (password length):${passwordLength}Includes Numbers:${passwordNum}Includes Uppercase Alphabets:${passwordUpper}Includes Lowercase Alphabets:${passwordLower}Includes Symbols:${passwordSymbol}`);
       else 
         alert('Password cannot be generated without selecting at least one criteria');
+
+    let pwd = generatePassword(passwordLength,passwordNum,passwordUpper,passwordLower,passwordSymbol);
+    document.querySelector("#password").value = pwd;
   });
 });
+
+function generatePassword(length, includeNum, includeLCase, includeUCase, includeSymbols)
+{
+  var generatedPassword = "generated Password";
+  return generatedPassword;
+}
 
   /*
 // Assignment Code
