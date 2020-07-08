@@ -5,27 +5,27 @@
   $("#generate").click(function (){
     var choiceCounter = 0;
 
-    let passwordLength = prompt("Specify number of characters in your password minimum 8 and maximum 128");
+    var passwordLength = prompt("Specify number of characters in your password minimum 8 and maximum 128");
       while(passwordLength < 8 || passwordLength  > 128)
         passwordLength = prompt("Specify number of characters in your password minimum 8 and maximum 128");
   
-      let passwordNum = confirm("Do you want numbers e.g. 123456 to be included in your password");
+      var passwordNum = confirm("Do you want numbers e.g. 123456 to be included in your password");
 
       if(passwordNum == true){
         choiceCounter++;
       } 
 
-      let passwordUpper = confirm("Do you want Upper case characters e.g. ABCDEFGH to be included in your password");
+      var passwordUpper = confirm("Do you want Upper case characters e.g. ABCDEFGH to be included in your password");
 
       if(passwordUpper == true) {
         choiceCounter++;
       } 
-      let passwordLower = confirm("Do you want Lower case characters e.g. abcdefgh to be included in your password");
+      var passwordLower = confirm("Do you want Lower case characters e.g. abcdefgh to be included in your password");
 
       if(passwordUpper == true) {
         choiceCounter++;
       } 
-      let passwordSymbol = confirm("Do you want Symbols e.g. @#$% to be included in your password");
+      var passwordSymbol = confirm("Do you want Symbols e.g. @#$% to be included in your password");
 
       if(passwordSymbol == true) {
         choiceCounter++;
@@ -42,9 +42,25 @@
 
 function generatePassword(length, includeNum, includeLCase, includeUCase, includeSymbols)
 {
+  for(var i=0; i<= length; i++){
+    if (includeNum == true || includeLCase == true || includeUCase == true || includeSymbols == true){
+      console.log(includeNum);
+    }else if
+      (includeNum == false || includeLCase == true || includeUCase == true || includeSymbols == true){
+        console.log(includeNum);
+      }else if
+      (includeNum == false || includeLCase == false || includeUCase == true || includeSymbols == true){
+        console.log(includeLCase);
+      }else if
+      (includeNum == false || includeLCase == false || includeUCase == false || includeSymbols == true){
+        console.log(includeUCase);
+      }
+    
+    }
   var generatedPassword = "generated Password";
   return generatedPassword;
-}
+  }
+
 
   /*
 // Assignment Code
