@@ -88,6 +88,11 @@ function generatePassword(passlength,uppercase, lowercase, numbers, specialchars
   return generatedPassword;
 }
  $("#clear").click(function (){
-  generatedPassword ='';
+  
+  alert("Do you want to clear password?");
+  generatedPassword  ='';
+  console.log(generatedPassword);
+  document.querySelector("#password").value = generatedPassword;
+  return generatedPassword ;
  });
 
