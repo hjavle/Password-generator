@@ -1,6 +1,7 @@
+//when document is ready and loaded ,
+// assign button with id of 'generate' to click event
 $(document).ready(function (){
-  //when document is ready and loaded ,
-  //  assign (wire up) event handler for click event of button with id of 'generate'
+  
   $("#generate").click(function (){
     //counter to count "no of choices" made by user for password complexity
     //this is used further below to ensure, that at least minimal required 
@@ -75,9 +76,9 @@ function generatePassword(passlength,uppercase, lowercase, numbers, specialchars
   //then choose special characters and append to the password generation character set
   if(specialchars) passwordCharsString += '~!@#$%^&*`';
 
-  //iterate thorough length of characters counter to fill in 
+  //go thorough length of characters counter to fill in 
   //Math.random() give random no from passwordCharsString's length 
-  //Math.floor()
+  //Math.floor() converts it to integer value
   for (i = 0; i <= passlength; i++)
   {
     console.log(passwordCharsString.length);
@@ -87,6 +88,8 @@ function generatePassword(passlength,uppercase, lowercase, numbers, specialchars
   console.log(generatedPassword);
   return generatedPassword;
 }
+
+// if clicked it will as you if generated password should be cleared 
  $("#clear").click(function (){
   
   alert("Do you want to clear password?");

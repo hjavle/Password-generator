@@ -74,6 +74,7 @@ header {
 }
 
 .btn {
+  width: 300px;
   border: none;
   background-color: hsl(360, 91%, 36%);
   border-radius: 25px;
@@ -120,6 +121,7 @@ button[disabled] {
   resize: none;
   overflow: hidden;
 }
+
 
 @media (max-width: 690px) {
   .btn {
