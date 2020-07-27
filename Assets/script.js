@@ -20,23 +20,23 @@ $(document).ready(function (){
   
       var passwordNum = confirm("Do you want numbers e.g. 123456 to be included in your password");
 
-      //if user makes 'yes' choice increment "no of choices" counter
+      //if user makes 'yes' choice increment  choiceCounter 
       if(passwordNum == true){
         choiceCounter++;
       } 
 
       var passwordUpper = confirm("Do you want Upper case characters e.g. ABCDEFGH to be included in your password");
-      //if user makes 'yes' choice increment "no of choices" counter
+      //if user makes 'yes' choice increment choiceCounter 
       if(passwordUpper == true) {
         choiceCounter++;
       } 
       var passwordLower = confirm("Do you want Lower case characters e.g. abcdefgh to be included in your password");
-      //if user makes 'yes' choice increment "no of choices" counter
+      //if user makes 'yes' choice increment choiceCounter 
       if(passwordUpper == true) {
         choiceCounter++;
       } 
       var passwordSymbol = confirm("Do you want Symbols e.g. @#$% to be included in your password");
-      //if user makes 'yes' choice increment "no of choices" counter
+      //if user makes 'yes' choice increment choiceCounter 
       if(passwordSymbol == true) {
         choiceCounter++;
       } 
