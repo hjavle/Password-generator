@@ -34,8 +34,12 @@ THEN the password is either displayed in an alert or written to the page
 
 The following image demonstrates the application functionality:
 
-![password generator demo](./Assets/passwordgenerator.png)
+### App
+![Password Generator App](./Assets/pass.gif)
 
+
+## ❤ **_Happy Coding_** ❤
+![](images/images/TechBridgeLogo.png)
 ## Review
 
 You are required to submit the following for review:
